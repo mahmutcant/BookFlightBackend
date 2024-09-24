@@ -1,6 +1,5 @@
 ### Express.js Project README
 
-```markdown
 # Express Flight Management API
 
 This project is an Express.js API for managing flight information. Users can log in, add flight details, and retrieve their saved flights.
