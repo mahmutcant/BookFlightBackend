@@ -5,7 +5,7 @@ const FlightSchema = new mongoose.Schema({
   flightDirection: { type: String, required: true },
   prefixICAO: { type: String, required: true },
   scheduleTime: { type: String, required: true },
-  route: { type: Date, required: true },
+  route: { type: Object, required: true },
 });
 
 const UserSchema = new mongoose.Schema({

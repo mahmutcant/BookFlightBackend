@@ -26,7 +26,8 @@ router.post('/flights', protect, async (req, res) => {
 
     res.json({ message: 'Flight added successfully', flights: req.user.flights });
   } catch (error) {
-    res.status(400).json({ error: 'Failed to add flight' });
+    console.error('Error adding flight:', error);
+    res.status(400).json({ error: 'Failed to add flight', details: error.message });
   }
 });
 
